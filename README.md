@@ -19,7 +19,7 @@ Usage
 Current options:
 
 -   `ENT_STD`: Default HTML conversion
--   `ENT_QUOTES`: Converts single quotes to `&#39;' (double quotes are always converted)
+-   `ENT_QUOTES`: Converts single quotes to `&#39;` (double quotes are always converted)
 -   `ENT_FORCENBSP`: Forces all spaces to be converted to `&nbsp;`
 
 *Note: multiple options are currently **not** supported.*
