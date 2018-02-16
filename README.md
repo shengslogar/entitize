@@ -19,8 +19,8 @@ Usage
 Current options:
 
 -   `ENT_STD`: Default HTML conversion
--   `ENT_QUOTES`: Converts single quotes to `\&#39;' (double quotes are always converted)
--   `ENT_FORCENBSP`: Forces all spaces to be converted to `\&nbsp;`
+-   `ENT_QUOTES`: Converts single quotes to `&#39;' (double quotes are always converted)
+-   `ENT_FORCENBSP`: Forces all spaces to be converted to `&nbsp;`
 
 *Note: multiple options are currently **not** supported.*
 
@@ -64,11 +64,11 @@ Nothing big.
         
 Best Practices
 --------------
-So this is like a super SUPER tiny library, and while you might find it super useful,
+This is a super tiny library, and while you might find it super useful,
 try not to include it as an external file along with the zillion other JS files you already
 have loading on your webpage. Instead, copy-paste this code into your main file (or a plugins
 file). This is the type of script that will probably never change, so there's no point forcing
-every poor user to your website to make a seperate network request!
+every poor user to your website to make a separate network request!
 
 Rant over.
 
@@ -81,9 +81,10 @@ No known bugs (yet). To file a bug report, please send an email to me at
 
 Change Log
 ----------
-1.0.0 (July 31, 2016)  
+1.0.0
 
--   Initial version (cheers everywhere)
+-   Initial version (160731)
+-   Published project to Github, tweak README (180216)
 
 Credits
 -------
