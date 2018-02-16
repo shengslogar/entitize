@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Entitize Test</title>
+        <style type="text/css">
+            body {
+                font: 14px monospace;
+            }
+
+            * {
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            #input,
+            #output {
+                resize: none;
+                width: 100%;
+                height: 200px;
+                font: inherit;
+                margin: 10px 0;
+                padding: 20px;
+                overflow: auto;
+                border: 1px solid #eee;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Entitize Test</h1>
+
+        <textarea placeholder="Input" id="input"></textarea>
+        <div id="output">Output (check console for detailed output)</div>
+
+        <script type="text/javascript" src="../entitize.js"></script>
+        <script type="text/javascript">
+            document.getElementById("input").addEventListener("input", function () {
+                var entitized = this.value.toHTML();
+                document.getElementById("output").innerHTML = entitized;
+                console.log(entitized);
+            });
+        </script>
+    </body>
+</html>
